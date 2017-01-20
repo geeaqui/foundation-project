@@ -686,6 +686,17 @@ body{
           }
         }
       }
+
+      #educ{
+        background:url('../images/educ.jpg') no-repeat center center fixed;
+        height: 700px;
+
+        .inner-educ{
+          background-color:#fff;
+          opacity:.7;
+        }
+      }
+
       section{
         margin-bottom:20%;
         h1{
