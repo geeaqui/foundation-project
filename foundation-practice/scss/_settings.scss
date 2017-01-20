@@ -625,7 +625,6 @@ $topbar-unstack-breakpoint: medium;
 body{
   background-color:#f9f9d6 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   // ******** Header section*********
   header{
       border-bottom:1px solid #ddddd9;
@@ -672,7 +671,23 @@ body{
 
     // ********** Main Section ********
     main{
+      #exp{
+        background:url('../images/exp.jpg') no-repeat center center fixed; 
+        background-size:cover;
+        height:650px;
+        color:#fff;
+
+        .inner-exp{
+          background-color:#000;
+          opacity:.7;
+
+          h1{
+            color:$white;
+          }
+        }
+      }
       section{
+        margin-bottom:20%;
         h1{
           color:#42423d;
         }
@@ -686,9 +701,11 @@ body{
           h1{
             font-size: 30px;
             border-bottom:1px solid black;
+            font-weight: bold;
+            text-transform: uppercase;
           }
 
-          .about{
+          .iconImg{
             width:25px;
             height:25px;
           }
@@ -697,10 +714,15 @@ body{
             position:relative;
             font-family: 'Vollkorn', serif;
             font-size: 28px;
+            }
+          }
+        article{
+          li{
+            font-size: 16px;
           }
         }
+      }
     }
-  }
 }
 
 
