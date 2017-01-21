@@ -626,6 +626,8 @@ body{
   background-color:#f9f9d6 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   // ******** Header section*********
+  
+  
   header{
       border-bottom:1px solid #ddddd9;
     h1{
@@ -671,6 +673,7 @@ body{
 
     // ********** Main Section ********
     main{
+      font-family: 'Vollkorn', serif;
       #exp{
         background:url('../images/exp.jpg') no-repeat center center fixed; 
         background-size:cover;
@@ -680,6 +683,7 @@ body{
         .inner-exp{
           background-color:#000;
           opacity:.7;
+          text-align:left;
 
           h1{
             color:$white;
@@ -692,6 +696,10 @@ body{
         height: 700px;
 
         .inner-educ{
+          position:relative;
+          top:-50px;
+          padding-bottom:300px;
+          padding-top:65px;
           background-color:#fff;
           opacity:.7;
         }
