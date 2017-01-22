@@ -674,6 +674,23 @@ body{
     // ********** Main Section ********
     main{
       font-family: 'Vollkorn', serif;
+
+      #about{
+        p{
+          font-size:12px;
+        }
+        @media screen and (min-width: 640px){
+           p{
+            font-size: 16px;
+            }
+        }
+        @media screen and (min-width: 1024px){
+          p{
+            font-size:28px;
+          }
+        }
+      }
+
       #exp{
         background:url('../images/exp.jpg') no-repeat center center fixed; 
         background-size:cover;
@@ -714,8 +731,16 @@ body{
           position:relative;
           top:50px;
           .myPic{
-            width:300px;
-            height:400px;
+            width:150px;
+            height:150px;
+            border-radius:100%;
+            margin-left:30%;
+            @media screen and (min-width:1024px){
+              margin-left:0;
+              width:300px;
+              height:400px;
+              border-radius:0;
+            }
           }
           h1{
             font-size: 30px;
@@ -728,13 +753,14 @@ body{
             width:25px;
             height:25px;
           }
-
+          
           p{
             position:relative;
             font-family: 'Vollkorn', serif;
-            font-size: 28px;
+            font-size: 12px;
             }
           }
+          
         article{
           li{
             font-size: 16px;
