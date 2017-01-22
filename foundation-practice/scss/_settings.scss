@@ -755,11 +755,17 @@ body{
           background-color:#000;
           opacity:.7;
           text-align:left;
+          width:800px;
 
           h1{
             color:$white;
             border-bottom:1px solid #fff;
           }
+        }
+
+        li p{
+          font-size: 24px;
+          font-weight: bold;
         }
       }
 
@@ -849,6 +855,9 @@ footer{
   //margin: 50px auto 0 auto;
   background:$white;
   margin-top:300px;
+  -webkit-box-shadow: -5px -1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px -1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -5px -1px 5px 0px rgba(0,0,0,0.75);
 }
 
 footer > h1{
@@ -856,7 +865,13 @@ footer > h1{
   color:#96989b;
   text-align: center;
   margin-bottom: 20px;
-  border-bottom:1px solid #000;
+  border-bottom:1px solid #cecece;
+  text-transform: uppercase;
+
+  @media screen and (min-width:1224px){
+  margin-left:20%;
+  padding-top: 50px;
+  }
 }
 
 footer img{
