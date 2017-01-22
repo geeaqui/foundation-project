@@ -621,13 +621,20 @@ $topbar-unstack-breakpoint: medium;
 
 // My Code starts here..
 
-// 1. Header
+
 body{
   background-color:#f9f9d6 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  // ******** Header section*********
+
+  .menuTrigger{
+    display:none;
+
+    @media screen and (max-width:480px){
+      display:block;
+    }
+  }
   
-  
+  // ******** Header section********* 
   header{
       border-bottom:1px solid #ddddd9;
 
@@ -660,6 +667,19 @@ body{
       @media screen and (min-width : 1024px){
         font-size: 72px;
       } 
+    }
+  }
+
+  nav{
+    @media screen and (max-width: 480px){
+      ul li{
+        border-bottom:1px solid  $black;
+        display: none;
+      }
+
+      ul li:last-child{
+        border-bottom:none;
+      }
     }
   }
 
