@@ -690,9 +690,10 @@ body{
       font-family: 'Vollkorn', serif;
 
       #about{
-        p{
-          font-size:12px;
-        }
+        transition: 1s;
+       // p{
+         // font-size:12px;
+       // }
         @media screen and (min-width: 640px){
            p{
             font-size: 16px;
@@ -710,6 +711,7 @@ body{
         background-size:cover;
         height:650px;
         color:#fff;
+        transition: 1s;
 
         .inner-exp{
           background-color:#000;
@@ -718,22 +720,32 @@ body{
 
           h1{
             color:$white;
+            border-bottom:1px solid #fff;
           }
         }
       }
 
       #educ{
         background:url('../images/grad.jpg') no-repeat center center fixed;
-        height: 600px;
         background-size:cover;
+        height:550px;
+        transition: 1s;
+
+        @media screen and (min-width : 1024px){
+          height: 600px;
+        }
 
         .inner-educ{
           position:relative;
           top:-50px;
-          padding-bottom:300px;
+          padding-bottom:225px;
           padding-top:65px;
           background-color:#fff;
           opacity:.7;
+
+          @media screen and (min-width : 1024px){
+            padding-bottom:250px;
+          }
         }
       }
 
@@ -788,6 +800,7 @@ body{
         article{
           li{
             font-size: 16px;
+            transition: 1s;
           }
         }
       }
