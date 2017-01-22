@@ -632,6 +632,8 @@ body{
 
     @media screen and (max-width:480px){
       display:block;
+      width:50px;
+      height:50px;
     }
   }
   
@@ -677,6 +679,7 @@ body{
 
     @media screen and (max-width: 480px){
         display:none;
+        background-color:#444444;
 
         .nav-expanded{
           display: inline-block;
@@ -684,6 +687,10 @@ body{
 
       ul li{
         border-bottom:1px solid  $black;
+
+        a{
+          color:#fff;
+        }
       }
 
       ul li:last-child{
