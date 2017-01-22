@@ -626,7 +626,8 @@ body{
   background-color:#f9f9d6 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  .menuTrigger{
+// ****Menu****** /
+  .menu-Trigger{
     display:none;
 
     @media screen and (max-width:480px){
@@ -634,6 +635,8 @@ body{
     }
   }
   
+
+
   // ******** Header section********* 
   header{
       border-bottom:1px solid #ddddd9;
@@ -671,10 +674,16 @@ body{
   }
 
   nav{
+
     @media screen and (max-width: 480px){
+        display:none;
+
+        .nav-expanded{
+          display: inline-block;
+        }
+
       ul li{
         border-bottom:1px solid  $black;
-        display: none;
       }
 
       ul li:last-child{
@@ -687,7 +696,7 @@ body{
       text-align:center;
       letter-spacing: 1px;
       li{
-        display: inline-block;
+    
         padding:5px 20px;
         display:block;
         @media screen and (min-width: 640px){
@@ -704,6 +713,8 @@ body{
         }
       }
     }
+
+
 
     // ********** Main Section ********
     main{
