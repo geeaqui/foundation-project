@@ -723,8 +723,9 @@ body{
       }
 
       #educ{
-        background:url('../images/educ.jpg') no-repeat center center fixed;
-        height: 700px;
+        background:url('../images/grad.jpg') no-repeat center center fixed;
+        height: 600px;
+        background-size:cover;
 
         .inner-educ{
           position:relative;
